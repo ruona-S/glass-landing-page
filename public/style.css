@@ -83,6 +83,7 @@ textarea::placeholder, input::placeholder {
 }
 form .contact {
    background-color: white;
+   border-radius: 2rem;
 }
 form .contact:hover {
    background-color: transparent;
