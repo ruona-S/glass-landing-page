@@ -1,0 +1,11 @@
+{
+  "name": "glass-landing-page",
+  "version": "1.0.0",
+  "description": "cool landing page with glass design",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,116 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body, html {
+   overflow-x: hidden;
+   position: relative;
+   background: linear-gradient(to bottom right, #E6E6FA, #DA70D6);
+   line-height: 1.5;
+   color: #BA55D3;
+}
+nav {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 1em;
+}
+section {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.container {
+   background: white;
+   height: 95%;
+   width: 75%;
+   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+   border-radius: 2rem;
+}
+img {
+   height: 50%;
+}
+.info-area {
+   text-align: center;
+   padding-top: 1em;
+   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+   border-radius: 2rem;
+   height: 40%;
+}
+span {
+   color: #483D8B;
+}
+span::before {
+   content: "repair";
+   animation: change infinite 5s;
+}
+
+@keyframes change {
+   0% {
+      content: "repair";
+   }
+   50% {
+      content: "replace";
+   }
+   75% {
+      content: "recycle";
+   }
+}
+form h2 {
+   margin-bottom: 2em;
+}
+form {
+   display: grid;
+   text-align: center;
+   margin-top: 2em;
+   padding: 0em 1em 0em 1em;
+}
+input, textarea {
+   height: 3rem;
+   border-radius: 2rem;
+   border-style: none;
+   color: #BA55D3;
+}
+textarea::placeholder {
+   padding: 1em 1em;
+}
+textarea::placeholder, input::placeholder {
+   padding-left: 1em;
+   color: #BA55D3;
+}
+
+
+
+
+@media (min-width: 1000px) {
+   .container {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      place-items: center;
+      height: 70%;
+   }
+   img {
+      height: 50%;
+      width: 70%;
+   }
+   .info-area {
+      grid-column: 1/2;
+      height: 100%;
+   }
+   .info-area h1 {
+      padding-bottom: 0em;
+      font-size: 2rem;
+   }
+   form {
+      grid-column: 2/2;
+      width: 60%;
+      height: 70%;
+      text-align: center;
+   }
+   input, textarea {
+      padding: -2em -2em;
+   }
+}
