@@ -81,7 +81,12 @@ textarea::placeholder, input::placeholder {
    padding-left: 1em;
    color: #BA55D3;
 }
-
+form .contact {
+   background-color: white;
+}
+form .contact:hover {
+   background-color: transparent;
+}
 
 
 
